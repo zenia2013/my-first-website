@@ -1,0 +1,374 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bloom & Grow 🌿</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Trebuchet MS', sans-serif;
+    background: #f5f8ed;
+    color: #304c36;
+}
+
+header {
+    background: #dce9d2;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 27px;
+    font-weight: bold;
+    color: #315c3d;
+}
+
+nav a {
+    text-decoration: none;
+    color: #315c3d;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #9aaf72;
+}
+
+.hero {
+    min-height: 520px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 20px;
+    background:
+    linear-gradient(#1c392d77, #1c392d77),
+    url('https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=1600')
+    center/cover;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 19px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background: #d5e6bd;
+    color: #315c3d;
+    padding: 13px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: .3s;
+}
+
+.btn:hover {
+    background: white;
+    transform: scale(1.08);
+}
+
+section {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 35px;
+    margin-bottom: 15px;
+    color: #315c3d;
+}
+
+.subtitle {
+    margin-bottom: 35px;
+    color: #71846c;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 5px 18px #00000012;
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card h3 {
+    padding: 15px 10px 5px;
+}
+
+.card p {
+    padding: 5px 15px 20px;
+    color: #71846c;
+}
+
+.tips {
+    background: #e4eddc;
+}
+
+.tip-box {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    margin: 12px;
+    flex: 1;
+    min-width: 200px;
+}
+
+.tip-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.shop {
+    background: #f0f4e8;
+}
+
+.price {
+    color: #668b50;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.about {
+    background: #dce9d2;
+}
+
+.about p {
+    max-width: 750px;
+    margin: auto;
+    line-height: 1.9;
+}
+
+.contact {
+    background: #fff;
+}
+
+input, textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 14px;
+    margin: 10px;
+    border: 1px solid #c8d8bc;
+    border-radius: 10px;
+    font-family: inherit;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+footer {
+    background: #315c3d;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+@media(max-width: 650px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+    nav a {
+        margin: 6px;
+        font-size: 13px;
+    }
+    .hero h1 {
+        font-size: 38px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">🌿 Bloom & Grow</div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#plants">Plants</a>
+        <a href="#care">Care Tips</a>
+        <a href="#shop">Shop</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- HOME -->
+<div class="hero" id="home">
+    <div>
+        <h1>Welcome to Bloom & Grow 🌷</h1>
+        <p>Bring nature closer. Make your world greener and happier.</p>
+        <a href="#plants" class="btn">Explore Plants 🌱</a>
+    </div>
+</div>
+
+<!-- PLANTS -->
+<section id="plants">
+    <h2 class="section-title">Our Lovely Plants 🌿</h2>
+    <p class="subtitle">Discover the beauty of nature!</p>
+
+    <div class="cards">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?w=500">
+            <h3>Monstera</h3>
+            <p>A beautiful tropical plant with unique leaves.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1459156212016-c812468e2115?w=500">
+            <h3>Succulents</h3>
+            <p>Small, cute plants that store water in their leaves.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=500">
+            <h3>Flowers</h3>
+            <p>Colorful flowers that brighten every space.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1509423350716-97f9360b4e09?w=500">
+            <h3>Indoor Plants</h3>
+            <p>Perfect green friends for your home.</p>
+        </div>
+    </div>
+</section>
+
+<!-- CARE TIPS -->
+<section class="tips" id="care">
+    <h2 class="section-title">Plant Care Guide 🪴</h2>
+    <p class="subtitle">A little love goes a long way!</p>
+
+    <div class="tip-container">
+        <div class="tip-box">
+            <h3>☀️ Sunlight</h3>
+            <p>Give your plants the right amount of light.</p>
+        </div>
+
+        <div class="tip-box">
+            <h3>💧 Water</h3>
+            <p>Water according to each plant's needs.</p>
+        </div>
+
+        <div class="tip-box">
+            <h3>🌱 Soil</h3>
+            <p>Choose healthy soil with good drainage.</p>
+        </div>
+
+        <div class="tip-box">
+            <h3>🍃 Love</h3>
+            <p>Check your plants regularly and remove dead leaves.</p>
+        </div>
+    </div>
+</section>
+
+<!-- SHOP -->
+<section class="shop" id="shop">
+    <h2 class="section-title">The Little Plant Shop 🛍️</h2>
+    <p class="subtitle">Find your next green bestie!</p>
+
+    <div class="cards">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1509423350716-97f9360b4e09?w=500">
+            <h3>Peace Lily</h3>
+            <p>Elegant and beautiful.</p>
+            <div class="price">Rs. 1,500</div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?w=500">
+            <h3>Monstera</h3>
+            <p>A tropical favourite.</p>
+            <div class="price">Rs. 2,000</div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1459156212016-c812468e2115?w=500">
+            <h3>Succulent</h3>
+            <p>Small but adorable!</p>
+            <div class="price">Rs. 500</div>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+    <h2 class="section-title">About Our Green World 💚</h2>
+    <p>
+        Bloom & Grow is a little corner of the internet made for
+        plant lovers! Our mission is to inspire everyone to enjoy
+        nature, learn about plants, discover beautiful flowers,
+        and create greener spaces. Whether you are a beginner
+        or a plant expert, there is always something new to grow!
+    </p>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+    <h2 class="section-title">Let's Connect 💌</h2>
+    <p class="subtitle">Have a question? Send us a message!</p>
+
+    <form onsubmit="sendMessage(event)">
+        <input type="text" placeholder="Your Name" required><br>
+        <input type="email" placeholder="Your Email" required><br>
+        <textarea rows="5" placeholder="Your Message..." required></textarea><br>
+        <button class="btn" type="submit">Send Message 🌸</button>
+    </form>
+</section>
+
+<footer>
+    <h3>🌿 Bloom & Grow</h3>
+    <p>Made with 💚 for all plant lovers.</p>
+    <p>© 2026 Bloom & Grow. All Rights Reserved.</p>
+</footer>
+
+<script>
+function sendMessage(event) {
+    event.preventDefault();
+    alert("Thank you for your lovely message! 🌷");
+    event.target.reset();
+}
+</script>
+
+</body>
+</html>
